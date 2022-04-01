@@ -92,11 +92,11 @@ public class UserBusinessImpl implements UserBusiness {
         if(!role.isPresent()){
             throw new LogicException(dicHelper.getMessage("err.role.does.not.exist",language));
         }
+        User user = modelMapper.map(userDTO,User.class);
         //default role
         UserRole userRole = UserRole.builder()
-                .role(role.get()).build();
+                .role(role.get()).user(user).build();
         // convert from dto -> entity
-        User user = modelMapper.map(userDTO,User.class);
         user.getUserRoles().add(userRole);
         //set response
         UserResponse userResponse = UserResponse.builder()

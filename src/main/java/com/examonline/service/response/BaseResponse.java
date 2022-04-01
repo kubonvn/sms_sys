@@ -1,16 +1,14 @@
 package com.examonline.service.response;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 
-@Data
-@Builder
+@Getter
+@Setter
 public class BaseResponse<T> extends ResponseEntity<T> {
 
     private String message;
