@@ -23,7 +23,7 @@
             </RollingFile>
         </Appenders>
         <Loggers>
-            <Logger name="com.examonline" level="debug" additivity="false">
+            <Logger name="com.classroom" level="debug" additivity="false">
                 <AppenderRef ref="ConsoleAppender" />
                 <AppenderRef ref="FileAppender" />    
             </Logger>
@@ -33,4 +33,4 @@
                 <AppenderRef ref="FileAppender" />
              </Root>
         </Loggers>
-    </Configuration>
+</configuration>
