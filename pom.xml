@@ -8,11 +8,11 @@
 		<version>2.6.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.classrom</groupId>
-	<artifactId>classroom-server</artifactId>
+	<groupId>com.sms_sys</groupId>
+	<artifactId>sms-sys-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>classroom</name>
-	<description>Classroom Online</description>
+	<description>SMS System</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<model.mapper.version>2.4.5</model.mapper.version>
